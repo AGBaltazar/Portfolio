@@ -1,0 +1,244 @@
+/*Navbar Styling*/
+.nav-grid{
+  display: flex;
+  align-self: center;
+}
+.intro-card, .about-card, .skills-card, .projects-card, .contact-card{
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: rgba(255, 255, 255, 0.5) -20px -20px 45px inset,
+    rgba(0, 0, 0, 0.1) 10px 10px 20px, rgba(0, 0, 0, 0.06) 5px 5px 10px;
+  position: relative;
+  margin: 0 .25em;
+  text-decoration: none;
+  padding: 1.5em;
+  border-radius: 10px;
+  min-width: 55%;
+}
+/*End of Navbar Styling*/
+
+/*Glassmorphic panel/card styling*/
+body {
+  font-family: "Space Grotesk", Helvetica, Arial, sans-serif;
+  color: rgba(9, 19, 60, 1);
+  background-image: url(https://source.unsplash.com/n7a2OJDSZns/2200x1100);
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  min-height: 100%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.intro-panel, .skills-panel, .about-panel, .contact-panel, .projects-panel{
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  width: 40vw;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 4%;
+  box-shadow: rgba(255, 255, 255, 0.5) -20px -20px 45px inset,
+    rgba(0, 0, 0, 0.1) 10px 10px 20px, rgba(0, 0, 0, 0.06) 5px 5px 10px;
+  position: relative;
+}
+
+.about-double-panel, .skills-double-panel{
+  display: flex;
+  align-items: center;
+}
+
+.panel-marginl{
+  margin-left: .5em;
+}
+.panel-marginr{
+  margin-right: .5em;
+}
+
+/*End of glassmorphic panel/card styling*/
+
+/*Start of Inner Card design*/
+h2 {
+  font-size: 2em;
+  font-weight: 1000;
+  margin-top: 0;
+}
+
+.card-text {
+  font-size: 14px;
+  line-height: 1.45;
+  opacity: 0.8;
+  margin-bottom: 2em;
+}
+
+.intro-button {
+  display: inline-block;
+  padding: 1em 2em;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(9, 28, 60, 1) 0%,
+    rgba(67, 46, 103, 1) 100%
+  );
+  text-decoration: none;
+  font-size: large;
+  letter-spacing: 0.05em;
+  border-radius: 10em;
+  color: white;
+}
+
+.menu-button{
+  display: inline-block;
+  padding: .5em 1.5em;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(9, 28, 60, 1) 0%,
+    rgba(67, 46, 103, 1) 100%
+  );
+  text-decoration: none;
+  font-size: medium;
+  letter-spacing: 0.05em;
+  border-radius: 10em;
+  color: white;
+}
+
+i{
+  font-size: medium;
+  margin: 0px 5px 0px 5px;
+}
+/*End of inner card design*/
+
+/*Begining of skill bar styles*/
+.skill {
+    margin-bottom: 35px;
+    position: relative;
+  overflow-x:hidden;
+}
+
+.skill > p {
+    font-size: medium;
+    color: #1a1716;
+    margin: 0;
+}
+
+.skill:before{
+    width: 100%;
+    height: 5px;
+    content: "";
+    display: block;
+    position: absolute;
+    background: #959595;
+    bottom: 0;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 5px;
+    background-image: linear-gradient( -45deg, rgba(9, 28, 60, 1) 0%, rgba(67, 46, 103, 1) 100% );
+}
+
+.skill-bar span{
+    position: absolute;
+    border-top: 5px solid #f4392f;
+    top: -24px;
+    font-size: medium;
+}
+
+.skill-bar {
+    position: relative;
+}
+
+.skill-expert{
+  width: 100%;
+}
+
+.skill-intermediate{
+    width: 85%;
+}
+
+.skill-basic{
+    width: 75%;
+}
+.skill-learning{
+  width: 50%;
+}
+
+
+.skill-expert, .skill-intermediate, .skill-basic, .skill-learning, .skill-type{
+  right: 0;
+}
+
+/*End of skills bar styles/
+/*Begining of contact styles*/
+
+#icons{
+  font-size: 1.5em;
+  color: black;
+  margin-bottom: 1em;
+}
+/*End of contact styles*/
+
+/*Begining of Media Qeueries*/
+@media only screen and (max-width: 600px){
+  .nav-container{
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  .intro-button{
+    padding: .5em 1.5em;
+    font-size: medium;
+  }
+
+  h2{
+    font-size: x-large;
+  }
+
+  .skills-double-panel, .about-double-panel{
+    display: flex;
+    flex-direction: column;
+    padding: 0px !important;
+    width: 95% !important;
+    height: 100%;
+  }
+
+  .intro-panel, .skills-panel, .about-panel, .contact-panel, .projects-panel{
+    padding: 5%;
+    width: 70vw;
+  }
+
+  .panel-marginl{
+    margin: 5px 0 0 0;
+  }
+  .panel-marginr{
+    margin-right: 0 0 0 5px;
+  }
+
+}
+@media screen and (max-width: 400px){
+  .intro-panel, .skills-double-panel, .about-double-panel, .contact-panel, .projects-panel{
+    width: 85vw;
+  }
+}
+/*End of Media Queries*/
+
+ /* Hides panels from initial load*/
+.hidden { 
+  display: none !important; }
