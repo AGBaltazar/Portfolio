@@ -1,210 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="index.css" />
-
-    <title>Portfolio</title>
-  </head>
-  <body>
-
-
-    <main>
-        <section class="intro-panel">
-        <h2>Hi, I'm Alejandro Garcia Baltazar</h2>
-        <div class="card-text">
-            <p>
-            A.S Computer Science Graduate, Software Engineer, and Amateur Chef
-            </p>
-        </div>
-        <a class="intro-button">Let's Begin<i class="far fa-arrow-alt-circle-right"></i></a>
-        </section>
-
-        <nav id="nav-tiles" class="nav-grid hidden">
-          <div class="nav-container">
-            <a class="intro-card" >Home</a>
-            <a class="about-card" >About Me</a>
-            <a class="skills-card" >Skills</a>
-            <a class="projects-card" >Projects</a>
-            <a class="contact-card" >Contact</a>
-          </div>
-        </nav>
-
-        <section id="about-me" class="about-double-panel hidden">
-          <div class="about-panel panel-marginr">
-          <h3>Where I've Been</h3>
-          <p>
-              A technical sponge coming from a small town trying to make <strong>BIG</strong>
-              impact! Growing up in a rural town meant I had little to no access to home wifi; 
-              but with a cell phone and Google this was quickly a thing of the past. This was
-              the beginning of my journey into technology. Now growing up rooting phones, replacing 
-              screens, or passing Core 1 of CompTia A+ exam (Their are 2 Tests/Cores) most of my 
-              youth was spent in tech. Once I hit college is when I began to program, starting with Python
-              I have had exposure to C++, JavaScript, HTML/CSS, Calculus (hepled my analytical skills),
-              and even Object-Oriented Programming.
-          </p>
-          </div>
-
-          <div class="about-panel panel-marginl">
-            <h3>What I Hope To Do</h3>
-            <p>
-              Like I said; I'm trying to make a <strong>BIG</strong> impact! I want 
-              to give back to where I grew up, I want to teach what was not available, 
-              and I want to help succeed those that come after me. Growing up in a small 
-              town with little to no internet meant I had the world to explore, but no 
-              access to certain  careers such as technology. I want to create programs 
-              to help kids that come from underserved towns and give them an opportunity 
-              to learn a new skill!
-            </p>
-            <a class="menu-button"><i class="far fa-arrow-alt-circle-left"></i>Back</a>
-          </div>
-        </section>
-
-        <section id="skills" class="skills-double-panel hidden">
-          <div class="skills-panel panel-marginr">
-          <h3> Tech Skills</h3>
-
-            <div class="skill">
-                <p>HTML5</p>
-                <div class="skill-bar skill-intermediate">
-                    <span class="skill-type">Intermediate</span>
-                </div>
-            </div>
-
-            <div class="skill">
-                <p>CSS3</p>
-                <div class="skill-bar skill-intermediate">
-                     <span class="skill-type">Intermediate</span>
-                </div>
-            </div>
-
-            <div class="skill">
-                <p>JQuery</p>
-                <div class="skill-bar skill-basic">
-                    <span class="skill-type">Basic</span>
-                </div>
-            </div>
-
-            <div class="skill">
-                <p>JavaScript</p>
-                <div class="skill-bar skill-intermediate">
-                    <span class="skill-type">Intermediate</span>
-                </div>
-            </div>
-
-            <div class="skill">
-                <p>SQL</p>
-                <div class="skill-bar skill-learning">
-                    <span class="skill-type">Learning</span>
-                </div>
-            </div>
-
-            <div class="skill">
-                <p>React</p>
-                <div class="skill-bar skill-learning">
-                    <span class="skill-type">Learning</span>
-                </div>
-            </div>
-
-            <div class="skill">
-              <p>OOP</p>
-              <div class="skill-bar skill-basic">
-                  <span class="skill-type">Basic</span>
-              </div>
-          </div>
-          
-          <div class="skill">
-            <p>Googling</p>
-            <div class="skill-bar skill-expert">
-                <span class="skill-type">Expert</span>
-            </div>
-        </div>
-
-          </div>
-
-          <div class="skills-panel panel-marginl">
-            <h3>Soft Skills</h3>
-            <div class="skill">
-
-              <p>Time Management</p>
-              <div class="skill-bar skill-intermediate">
-                  <span class="skill-type">Intermediate</span>
-              </div>
-          </div>
-
-          <div class="skill">
-              <p>Problem Solving</p>
-              <div class="skill-bar skill-intermediate">
-                   <span class="skill-type">Intermediate</span>
-              </div>
-          </div>
-
-          <div class="skill">
-              <p>Communication</p>
-              <div class="skill-bar skill-intermediate">
-                  <span class="skill-type">Intermediate</span>
-              </div>
-          </div>
-
-          <div class="skill">
-            <p>Leadership</p>
-            <div class="skill-bar skill-basic">
-                <span class="skill-type">Basic</span>
-            </div>
-        </div>
-
-        <div class="skill">
-          <p>Technical Writing</p>
-          <div class="skill-bar skill-intermediate">
-              <span class="skill-type">Intermediate</span>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alejandro Garcia Baltazar | Software Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body style="background-color: #f8f9fa; font-family: 'Inter', sans-serif;">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Alejandro Garcia Baltazar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+        </ul>
       </div>
+    </div>
+  </nav>
 
-      <div class="skill">
-        <p>Drinking Coffee</p>
-        <div class="skill-bar skill-expert">
-            <span class="skill-type">Expert</span>
-        </div>
+  <header class="bg-light py-5 text-center" style="margin-top: 4.5rem;">
+    <div class="container" data-aos="zoom-in">
+      <h1 class="fw-bold mb-3">Alejandro Garcia Baltazar</h1>
+      <p class="fs-5">Software Developer | Python • Flutter • JavaScript</p>
+      <div>
+        <a href="mailto:agee.baltazar@gmail.com" class="btn btn-outline-dark me-2">📧 Email</a>
+        <a href="https://www.linkedin.com/in/alejandrobaltazar" target="_blank" class="btn btn-outline-primary me-2">🔗 LinkedIn</a>
+        <a href="https://github.com/AGBaltazar" target="_blank" class="btn btn-outline-dark">🐱 GitHub</a>
       </div>
+    </div>
+  </header>
 
-            <a class="menu-button"><i class="far fa-arrow-alt-circle-left"></i>Back</a>
-          </div>
-        </section>
+  <section id="about" class="container py-5" data-aos="fade-up">
+    <div class="p-4 bg-white rounded shadow-sm">
+      <h2 class="fw-semibold border-bottom pb-2 mb-4">About Me</h2>
+      <p class="lead">Detail-oriented Computer Science graduate with hands-on experience in Python, Flutter, and JavaScript. I've developed and deployed scalable mobile and web applications using Firebase, GitHub, and modern software development practices. I bring strong foundations in data structures, algorithms, and object-oriented programming, and enjoy building real-world solutions that combine clean design with technical efficiency.</p>
+      <p class="mb-0">Currently seeking a Software Engineer or SWE Internship position where I can contribute my skills in coding, problem solving, and cross-functional teamwork to build impactful software.</p>
+    </div>
+  </section>
 
-        <section id="projects" class="projects-panel hidden">
-        <h3>Projects</h3>
-        <p>
-            Please pardon my lack of projects; As I work full-time I find whatever
-            time inbetween the day to work on this section!
-        </p>
-        <a class="menu-button"><i class="far fa-arrow-alt-circle-left"></i>Back</a>
-        </section>
+  <section id="skills" class="container py-5" data-aos="fade-up">
+    <div class="p-4 bg-white rounded shadow-sm">
+      <h2 class="fw-semibold border-bottom pb-2 mb-4">Skills</h2>
+      <div class="d-flex flex-wrap gap-3">
+        <span class="badge bg-secondary p-2">Python</span>
+        <span class="badge bg-secondary p-2">Flutter</span>
+        <span class="badge bg-secondary p-2">JavaScript</span>
+        <span class="badge bg-secondary p-2">HTML</span>
+        <span class="badge bg-secondary p-2">C++</span>
+        <span class="badge bg-secondary p-2">Git & GitHub</span>
+        <span class="badge bg-secondary p-2">Firebase</span>
+        <span class="badge bg-secondary p-2">REST APIs</span>
+        <span class="badge bg-secondary p-2">OOP</span>
+        <span class="badge bg-secondary p-2">Linux</span>
+        <span class="badge bg-secondary p-2">Software Engineering</span>
+        <span class="badge bg-secondary p-2">Networking</span>
+      </div>
+    </div>
+  </section>
 
-        <section id="contact" class="contact-panel hidden">
-        <h3>Let's Connect!</h3>
-        <p>
-           I am always available to connect for any prospective employeer, coworker, friend,
-          or project!
-        </p>
+  <section id="projects" class="container py-5" data-aos="fade-up">
+    <div class="p-4 bg-white rounded shadow-sm">
+      <h2 class="fw-semibold border-bottom pb-2 mb-4">Projects</h2>
+
+      <div class="project-card mb-4">
+        <h4 class="fw-bold">Eatscape – Food Truck Management App</h4>
+        <p>Developed a cross-platform mobile app in Flutter with real-time location tracking (Google Maps API), user authentication (Firebase Auth), and responsive UI. Admin dashboard allows food truck owners to manage menus and locations with tiered subscription visibility.</p>
+        <p><strong>Tech:</strong> Flutter, Dart, Firebase (Auth, Firestore, Storage), Google Maps API, Cloud Functions</p>
+        <video controls width="100%">
+          <source src="media/demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
         
-          <div class="contact-icons">
-            <a href="https://github.com/AGBaltazar"><i id="icons" class="fab fa-github-square"></i></a>
-            <a href="https://linkedin.com/in/alejandrobaltazar"><i id="icons" class="fab fa-linkedin "></i></a>
+      </div>
 
-          </div>
+      <div class="project-card">
+        <h4 class="fw-bold">Asteroid Shooter Game</h4>
+        <p>Built an arcade-style space shooter using Python and Pygame with core mechanics (movement, firing, scoring), collision detection, animations, and a HUD system. Demonstrated clean OOP principles and real-time game logic.</p>
+        <p><strong>Tech:</strong> Python, Pygame</p>
+        <video controls width="100%">
+          <source src="media/demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="container py-5" data-aos="fade-up">
+    <div class="p-4 bg-white rounded shadow-sm">
+      <h2 class="fw-semibold border-bottom pb-2 mb-4">Education</h2>
+      <p><strong>Bachelor of Science in Computer Science</strong><br>University of Arkansas, Grantham — <em>Graduated Aug 2024</em></p>
+      <p><strong>Relevant coursework:</strong> Data Structures and Algorithms, Software Engineering, Computer Networks, Security Operations, JavaScript Programming, Advanced C++, Mobile App Development, Operating Systems, Systems Analysis, and Project Management.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="container py-5" data-aos="fade-up">
+    <div class="p-4 bg-white rounded shadow-sm">
+      <h2 class="fw-semibold border-bottom pb-2 mb-4">Contact Me</h2>
+      <form action="https://formspree.io/f/moqgljvj" method="POST">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" required>
         </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-        <a class="menu-button"><i class="far fa-arrow-alt-circle-left"></i>Back</a>
-        </section>
+  <section id="resume" class="container py-5" data-aos="fade-up">
+    <div class="p-4 bg-white rounded shadow-sm text-center">
+      <h2 class="fw-semibold border-bottom pb-2 mb-4">Resume</h2>
+      <a href="/mnt/data/Alejandro Garcia Resume.pdf" class="btn btn-outline-primary" download>📄 Download My Resume</a>
+    </div>
+  </section>
 
-    </main>
+  <footer class="bg-primary text-white text-center p-4">
+    <p class="mb-0">&copy; 2025 Alejandro Garcia Baltazar.</p>
+  </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="index.js"></script>
-    <script src="https://kit.fontawesome.com/aa11ce0277.js" crossorigin="anonymous"></script>
-
-  </body>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
