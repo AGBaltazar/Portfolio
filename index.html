@@ -32,22 +32,27 @@
   <header class="bg-light py-5 text-center" style="margin-top: 4.5rem;">
     <div class="container" data-aos="zoom-in">
       <h1 class="fw-bold mb-3">Alejandro Garcia Baltazar</h1>
-      <p class="fs-5">Software Developer | Python • Flutter • JavaScript</p>
+      <p class="fs-5">Software Developer | Python • Flutter • Golang</p>
       <div>
-        <a href="mailto:agee.baltazar@gmail.com" class="btn btn-outline-dark me-2">📧 Email</a>
-        <a href="https://www.linkedin.com/in/alejandrobaltazar" target="_blank" class="btn btn-outline-primary me-2">🔗 LinkedIn</a>
-        <a href="https://github.com/AGBaltazar" target="_blank" class="btn btn-outline-dark">🐱 GitHub</a>
+        <a href="mailto:agee.baltazar@icloud.com" class="btn btn-outline-dark me-2">📧 Email</a>
+        <a href="https://www.linkedin.com/in/alejandrobaltazar" target="_blank" class="btn btn-outline-primary me-2">LinkedIn</a>
+        <a href="https://github.com/AGBaltazar" target="_blank" class="btn btn-outline-dark">GitHub</a>
       </div>
     </div>
   </header>
 
   <section id="about" class="container py-5" data-aos="fade-up">
-    <div class="p-4 bg-white rounded shadow-sm">
-      <h2 class="fw-semibold border-bottom pb-2 mb-4">About Me</h2>
-      <p class="lead">Detail-oriented Computer Science graduate with hands-on experience in Python, Flutter, and JavaScript. I've developed and deployed scalable mobile and web applications using Firebase, GitHub, and modern software development practices. I bring strong foundations in data structures, algorithms, and object-oriented programming, and enjoy building real-world solutions that combine clean design with technical efficiency.</p>
-      <p class="mb-0">Currently seeking a Software Engineer or SWE Internship position where I can contribute my skills in coding, problem solving, and cross-functional teamwork to build impactful software.</p>
-    </div>
-  </section>
+  <div class="p-4 bg-white rounded shadow-sm">
+    <h2 class="fw-semibold border-bottom pb-2 mb-4">About Me</h2>
+    <p class="lead">
+      I'm a Computer Science graduate with a growing focus on backend development and systems programming. I have hands-on experience building scalable applications using Python and Golang, along with frameworks like Flutter for mobile and Firebase for full-stack integration. My strengths lie in API design, command-line tools, object-oriented programming, and problem-solving through clean, efficient code.
+    </p>
+    <p class="mb-0">
+      I'm currently seeking a Software Engineer or SWE Internship opportunity where I can contribute backend expertise, grow alongside a collaborative team, and continue building meaningful software that solves real problems.
+    </p>
+  </div>
+</section>
+
 
   <section id="skills" class="container py-5" data-aos="fade-up">
     <div class="p-4 bg-white rounded shadow-sm">
@@ -55,7 +60,8 @@
       <div class="d-flex flex-wrap gap-3">
         <span class="badge bg-secondary p-2">Python</span>
         <span class="badge bg-secondary p-2">Flutter</span>
-        <span class="badge bg-secondary p-2">JavaScript</span>
+        <span class="badge bg-secondary p-2">Golang</span>
+        <span class="badge bg-secondary p-2">SQL</span>
         <span class="badge bg-secondary p-2">HTML</span>
         <span class="badge bg-secondary p-2">C++</span>
         <span class="badge bg-secondary p-2">Git & GitHub</span>
@@ -77,10 +83,40 @@
         <h4 class="fw-bold">Eatscape – Food Truck Management App</h4>
         <p>Developed a cross-platform mobile app in Flutter with real-time location tracking (Google Maps API), user authentication (Firebase Auth), and responsive UI. Admin dashboard allows food truck owners to manage menus and locations with tiered subscription visibility.</p>
         <p><strong>Tech:</strong> Flutter, Dart, Firebase (Auth, Firestore, Storage), Google Maps API, Cloud Functions</p>
-        <video controls width="100%">
-          <source src="media/demo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <div class="text-center my-4">
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#eatscapeScreenshots" aria-expanded="false" aria-controls="eatscapeScreenshots">
+            View App Screenshots
+          </button>
+        </div>
+        
+        <div class="collapse" id="eatscapeScreenshots">
+          <div id="eatscapeCarousel" class="carousel slide mb-4 d-flex justify-content-center" data-bs-ride="carousel" style="max-width: 350px; margin: auto;">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/Eatscape1.PNG" class="d-block w-100 rounded shadow-sm" alt="Eatscape Screenshot 1">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Eatscape2.PNG" class="d-block w-100 rounded shadow-sm" alt="Eatscape Screenshot 2">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Eatscape3.PNG" class="d-block w-100 rounded shadow-sm" alt="Eatscape Screenshot 3">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Eatscape4.PNG" class="d-block w-100 rounded shadow-sm" alt="Eatscape Screenshot 4">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Eatscape5.PNG" class="d-block w-100 rounded shadow-sm" alt="Eatscape Screenshot 5">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#eatscapeCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#eatscapeCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+        
         
       </div>
 
@@ -94,16 +130,59 @@
         </video>
         
       </div>
+
+      <div class="project-card mb-4">
+      <h4 class="fw-bold">Pokedex CLI – Go Command Line App</h4>
+      <p>Developed a command-line application in Go that lets users look up Pokémon data using the PokéAPI. The project demonstrates REST API integration, JSON parsing, CLI tool design, and performance improvements using a local cache system.</p>
+      <ul>
+        <li>Sent and handled HTTP requests to the PokéAPI</li>
+        <li>Parsed complex JSON responses into Go structs</li>
+        <li>Built a user-friendly CLI with input commands and navigation</li>
+        <li>Implemented caching to reduce API calls and improve speed</li>
+      </ul>
+      <p><strong>Tech:</strong> Go (Golang), REST API, CLI Design, JSON, HTTP, Caching</p>
+    </div>
     </div>
   </section>
 
-  <section id="education" class="container py-5" data-aos="fade-up">
-    <div class="p-4 bg-white rounded shadow-sm">
-      <h2 class="fw-semibold border-bottom pb-2 mb-4">Education</h2>
-      <p><strong>Bachelor of Science in Computer Science</strong><br>University of Arkansas, Grantham — <em>Graduated Aug 2024</em></p>
-      <p><strong>Relevant coursework:</strong> Data Structures and Algorithms, Software Engineering, Computer Networks, Security Operations, JavaScript Programming, Advanced C++, Mobile App Development, Operating Systems, Systems Analysis, and Project Management.</p>
+ <section id="education" class="container py-5" data-aos="fade-up">
+  <div class="p-4 bg-white rounded shadow-sm">
+    <h2 class="fw-semibold border-bottom pb-2 mb-4">Education</h2>
+
+    <section id="education" class="container py-5" data-aos="fade-up">
+  <div class="p-4 bg-white rounded shadow-sm">
+    <h2 class="fw-semibold border-bottom pb-2 mb-4">Education</h2>
+
+    <div class="mb-4">
+      <h5 class="fw-bold mb-1">Bachelor of Science in Computer Science</h5>
+      <p class="mb-1">University of Arkansas, Grantham — <em>Graduated Aug. 2024</em></p>
+      <p>
+        A DEAC-accredited program focused on practical software development, covering topics like programming (JavaScript, C++, C#), data structures, databases (SQL), operating systems, software engineering, cybersecurity, and mobile/web development.
+      </p>
+      <ul>
+        <li>Key topics: Data Structures, Networking, OOP, Web Development, Cybersecurity</li>
+        <li>Languages/Tools: JavaScript, C++, SQL, Git, .NET</li>
+        <li>Capstone: Full-stack team project simulating real-world development</li>
+      </ul>
     </div>
-  </section>
+
+   <div class="mt-4">
+  <h5 class="fw-bold mb-2">Continued Learning — Boot.dev</h5>
+  <p>
+    I'm committed to ongoing growth as a developer through structured learning on <strong>Boot.dev</strong>, where I’ve been deepening my expertise in backend development, systems programming, and computer science fundamentals. So far, I’ve completed courses in Go, Python, Object-Oriented Programming, Git, HTTP Clients, and Linux, gaining hands-on experience with real-world concepts like API integration, CLI tooling, version control, and shell-based environments. This continuous education helps me build clean, efficient software with a strong foundation in both theory and practice.
+  </p>
+  <p class="mb-2">
+    <a href="https://www.boot.dev/u/abaltazar" target="_blank" class="btn btn-outline-primary btn-sm">🔗 View My Boot.dev Profile</a>
+  </p>
+  <p >
+    <img src="https://api.boot.dev/v1/users/public/1a980e6e-c0f6-4ad2-b38f-cfc688ed6153/thumbnail" alt="Boot.dev Profile Badge" class="img-fluid rounded shadow-sm" style="max-width: 300px;">
+  </p>
+</div>
+
+  </div>
+</section>
+
+
 
   <section id="contact" class="container py-5" data-aos="fade-up">
     <div class="p-4 bg-white rounded shadow-sm">
