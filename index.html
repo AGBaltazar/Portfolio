@@ -45,7 +45,7 @@
   <div class="p-4 bg-white rounded shadow-sm">
     <h2 class="fw-semibold border-bottom pb-2 mb-4">About Me</h2>
     <p class="lead">
-      I'm a Computer Science graduate with a growing focus on backend development and systems programming. I have hands-on experience building scalable applications using Python and Golang, along with frameworks like Flutter for mobile and Firebase for full-stack integration. My strengths lie in API design, command-line tools, object-oriented programming, and problem-solving through clean, efficient code.
+      I'm a Computer Science graduate with a growing focus on backend development and systems programming. I have hands-on experience building scalable applications using Python and Golang, along with frameworks like Flutter for mobile and Firebase for full-stack integration. My strengths lie in Mobile Development, Backend-Development, command-line tools, object-oriented programming, and problem-solving through clean, efficient code.
     </p>
     <p class="mb-0">
       I'm currently seeking a Software Engineer or SWE Internship opportunity where I can contribute backend expertise, grow alongside a collaborative team, and continue building meaningful software that solves real problems.
@@ -58,19 +58,23 @@
     <div class="p-4 bg-white rounded shadow-sm">
       <h2 class="fw-semibold border-bottom pb-2 mb-4">Skills</h2>
       <div class="d-flex flex-wrap gap-3">
+       <div class="d-flex flex-wrap gap-2 mt-3">
+        <span class="badge bg-secondary p-2">Go (Golang)</span>
         <span class="badge bg-secondary p-2">Python</span>
         <span class="badge bg-secondary p-2">Flutter</span>
-        <span class="badge bg-secondary p-2">Golang</span>
-        <span class="badge bg-secondary p-2">SQL</span>
-        <span class="badge bg-secondary p-2">HTML</span>
-        <span class="badge bg-secondary p-2">C++</span>
-        <span class="badge bg-secondary p-2">Git & GitHub</span>
-        <span class="badge bg-secondary p-2">Firebase</span>
         <span class="badge bg-secondary p-2">REST APIs</span>
+        <span class="badge bg-secondary p-2">PostgreSQL</span>
+        <span class="badge bg-secondary p-2">SQL</span>
+        <span class="badge bg-secondary p-2">HTML/CSS</span>
+        <span class="badge bg-secondary p-2">C++</span>
+        <span class="badge bg-secondary p-2">Firebase</span>
+        <span class="badge bg-secondary p-2">Git & GitHub</span>
         <span class="badge bg-secondary p-2">OOP</span>
-        <span class="badge bg-secondary p-2">Linux</span>
-        <span class="badge bg-secondary p-2">Software Engineering</span>
+        <span class="badge bg-secondary p-2">CLI Tools</span>
         <span class="badge bg-secondary p-2">Networking</span>
+        <span class="badge bg-secondary p-2">Software Engineering</span>
+</div>
+
       </div>
     </div>
   </section>
@@ -120,36 +124,46 @@
         
       </div>
 
-      <div class="project-card">
-        <h4 class="fw-bold">Asteroid Shooter Game</h4>
-        <p>Built an arcade-style space shooter using Python and Pygame with core mechanics (movement, firing, scoring), collision detection, animations, and a HUD system. Demonstrated clean OOP principles and real-time game logic.</p>
-        <p><strong>Tech:</strong> Python, Pygame</p>
-        <video controls width="100%">
-          <source src="media/demo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        
-      </div>
+    
+<div class="project-card mb-4">
+  <h4 class="fw-bold">Asteroid Shooter Game</h4>
+  <p>Built an arcade-style space shooter using Python and Pygame with core mechanics (movement, firing, scoring), collision detection, animations, and a HUD system. Demonstrated clean OOP principles and real-time game logic.</p>
+  <p><strong>Tech:</strong> Python, Pygame</p>
 
-      <div class="project-card mb-4">
-      <h4 class="fw-bold">Pokedex CLI – Go Command Line App</h4>
-      <p>Developed a command-line application in Go that lets users look up Pokémon data using the PokéAPI. The project demonstrates REST API integration, JSON parsing, CLI tool design, and performance improvements using a local cache system.</p>
-      <ul>
-        <li>Sent and handled HTTP requests to the PokéAPI</li>
-        <li>Parsed complex JSON responses into Go structs</li>
-        <li>Built a user-friendly CLI with input commands and navigation</li>
-        <li>Implemented caching to reduce API calls and improve speed</li>
-      </ul>
-      <p><strong>Tech:</strong> Go (Golang), REST API, CLI Design, JSON, HTTP, Caching</p>
+  <div class="d-flex justify-content-center mb-2">
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#videoAsteroid" aria-expanded="false" aria-controls="videoAsteroid">
+      🎮 Show Demo Video
+    </button>
+  </div>
+  <div class="collapse" id="videoAsteroid">
+    <video controls width="100%">
+      <source src="media/AsteroidGameplay.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<div class="project-card mb-4">
+  <h4 class="fw-bold">Pokedex CLI – Go Command Line App</h4>
+  <p>Developed a command-line application in Go that lets users look up Pokémon data using the PokéAPI. The project demonstrates REST API integration, JSON parsing, CLI tool design, and performance improvements using a local cache system.</p>
+  <ul>
+    <li>Sent and handled HTTP requests to the PokéAPI</li>
+    <li>Parsed complex JSON responses into Go structs</li>
+    <li>Built a user-friendly CLI with input commands and navigation</li>
+    <li>Implemented caching to reduce API calls and improve speed</li>
+  </ul>
+  <p><strong>Tech:</strong> Go (Golang), REST API, CLI Design, JSON, HTTP, Caching</p>
+
+
+</div>
+
+
+
     </div>
-    </div>
+  </div>
   </section>
 
- <section id="education" class="container py-5" data-aos="fade-up">
-  <div class="p-4 bg-white rounded shadow-sm">
-    <h2 class="fw-semibold border-bottom pb-2 mb-4">Education</h2>
-
-    <section id="education" class="container py-5" data-aos="fade-up">
+  <section id="education" class="container py-5" data-aos="fade-up">
   <div class="p-4 bg-white rounded shadow-sm">
     <h2 class="fw-semibold border-bottom pb-2 mb-4">Education</h2>
 
@@ -205,12 +219,27 @@
     </div>
   </section>
 
-  <section id="resume" class="container py-5" data-aos="fade-up">
-    <div class="p-4 bg-white rounded shadow-sm text-center">
-      <h2 class="fw-semibold border-bottom pb-2 mb-4">Resume</h2>
-      <a href="/mnt/data/Alejandro Garcia Resume.pdf" class="btn btn-outline-primary" download>📄 Download My Resume</a>
+<section id="resume" class="container py-5" data-aos="fade-up">
+  <div class="p-4 bg-white rounded shadow-sm text-center">
+    <h2 class="fw-semibold border-bottom pb-2 mb-4">Resume</h2>
+
+    <div class="d-flex justify-content-center gap-3 flex-wrap mb-3">
+      <a href="/media/Alejandro Garcia Resume.pdf" class="btn btn-outline-primary" download>
+        Download My Resume
+      </a>
+      <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#viewResume" aria-expanded="false" aria-controls="viewResume">
+        View Resume
+      </button>
     </div>
-  </section>
+
+    <div class="collapse" id="viewResume">
+      <div class="ratio ratio-4x3 shadow-sm border rounded">
+        <iframe src="/media/Alejandro Garcia Resume.pdf" title="Resume PDF" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <footer class="bg-primary text-white text-center p-4">
     <p class="mb-0">&copy; 2025 Alejandro Garcia Baltazar.</p>
