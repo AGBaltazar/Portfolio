@@ -95,8 +95,6 @@
         <div class="skill-items">
           <span class="tag">Baremetal C</span>
           <span class="tag">STM32CubeIDE</span>
-          <span class="tag">GDB</span>
-          <span class="tag">Linker scripts</span>
           <span class="tag">ARM Assembly</span>
         </div>
       </div>
@@ -197,13 +195,23 @@
 
     <div class="edu-item">
       <div class="edu-school">FastBit Embedded Brain Academy</div>
-      <div class="edu-degree">Mastering Microcontroller & Peripheral Driver Development (MCU1) — In Progress</div>
+      <div class="edu-degree">Mastering Microcontroller & Peripheral Driver Development (MCU1) — Completed/div>
       <p class="edu-desc">Peripheral driver development from scratch on STM32: GPIO, SPI, I2C, USART. Emphasis on register-level understanding and reading ARM reference manuals.</p>
+       <div class="project-links">
+        <button class="collapse-toggle" onclick="toggleCollapse(this)">View Certificate</button>
+      </div>
+      <div class="collapse-body">
+        <div class="carousel" id="carousel1">
+          <div class="carousel-track" id="track1">
+            <img src="images/Udemy Cert.jpg" alt="Eatscape screenshot 1">
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="edu-item">
       <div class="edu-school">Boot.dev</div>
-      <div class="edu-degree">Backend & Systems — Ongoing</div>
+      <div class="edu-degree">Backend & Systems — Completed</div>
       <p class="edu-desc">Go, Python, OOP, Git, HTTP, Linux. Structured backend fundamentals to complement embedded systems work.</p>
     </div>
 
@@ -254,7 +262,7 @@
   function toggleCollapse(btn) {
     const body = btn.closest('.project-links').nextElementSibling;
     body.classList.toggle('open');
-    btn.textContent = body.classList.contains('open') ? 'Hide Screenshots' : 'View Screenshots';
+    btn.textContent = body.classList.contains('open') ? 'Hide Image' : 'View Image';
   }
 
   // Simple carousel
