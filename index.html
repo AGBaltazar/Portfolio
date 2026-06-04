@@ -1,265 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alejandro Garcia Baltazar | Software Developer</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alejandro Garcia Baltazar — Firmware & Embedded Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
 </head>
-<body style="background-color: #f8f9fa; font-family: 'Inter', sans-serif;">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Alejandro Garcia Baltazar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<body>
 
-  <header class="bg-light py-5 text-center" style="margin-top: 4.5rem;">
-    <div class="container" data-aos="zoom-in">
-      <h1 class="fw-bold mb-3">Alejandro Garcia Baltazar</h1>
-      <p class="fs-5">Software Developer | Python • Flutter • Golang</p>
-      <div>
-        <a href="mailto:agee.baltazar@icloud.com" class="btn btn-outline-dark me-2">📧 Email</a>
-        <a href="https://www.linkedin.com/in/alejandrobaltazar" target="_blank" class="btn btn-outline-primary me-2">LinkedIn</a>
-        <a href="https://github.com/AGBaltazar" target="_blank" class="btn btn-outline-dark">GitHub</a>
-      </div>
-    </div>
-  </header>
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">Alejandro Garcia Baltazar</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <section id="about" class="container py-5" data-aos="fade-up">
-  <div class="p-4 bg-white rounded shadow-sm">
-    <h2 class="fw-semibold border-bottom pb-2 mb-4">About Me</h2>
-    <p class="lead">
-      I'm a Computer Science graduate with a growing focus on backend development and systems programming. I have hands-on experience building scalable applications using Python and Golang, along with frameworks like Flutter for mobile and Firebase for full-stack integration. My strengths lie in Mobile Development, Backend-Development, command-line tools, object-oriented programming, and problem-solving through clean, efficient code.
-    </p>
-    <p class="mb-0">
-      I'm currently seeking a Software Engineer or SWE Internship opportunity where I can contribute backend expertise, grow alongside a collaborative team, and continue building meaningful software that solves real problems.
-    </p>
+<!-- HERO -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-label">Firmware & Embedded Engineer</div>
+    <h1>Alejandro<br>Garcia Baltazar</h1>
+    <p class="hero-sub">CS graduate building from the silicon up. Direct register manipulation, peripheral driver development, and real hardware — no abstractions.</p>
+    <div class="hero-actions">
+      <a href="/media/Alejandro Garcia Resume.pdf" class="btn-primary" download>↓ Download Resume</a>
+      <a href="https://github.com/AGBaltazar" target="_blank" class="btn-ghost">GitHub →</a>
+      <a href="https://www.linkedin.com/in/alejandrobaltazar" target="_blank" class="btn-ghost">LinkedIn →</a>
+    </div>
   </div>
 </section>
 
+<!-- ABOUT -->
+<section id="about">
+  <div class="container fade-in">
+    <div class="section-header">
+      <span class="section-label">01</span>
+      <h2>About</h2>
+    </div>
+    <p class="about-text">Firmware and embedded systems engineer in training with a Bachelor's in Computer Science. I work directly at the register level — configuring RCC, GPIO, and peripherals from the reference manual without HAL abstractions. My goal is to build reliable, efficient firmware on constrained hardware.</p>
+    <p class="about-text">I come from a software background and chose to pivot into embedded because I wanted to understand the full stack — not just what software does, but what the hardware underneath it is actually doing.</p>
 
-  <section id="skills" class="container py-5" data-aos="fade-up">
-    <div class="p-4 bg-white rounded shadow-sm">
-      <h2 class="fw-semibold border-bottom pb-2 mb-4">Skills</h2>
-      <div class="d-flex flex-wrap gap-3">
-       <div class="d-flex flex-wrap gap-2 mt-3">
-        <span class="badge bg-secondary p-2">Go (Golang)</span>
-        <span class="badge bg-secondary p-2">Python</span>
-        <span class="badge bg-secondary p-2">Flutter</span>
-        <span class="badge bg-secondary p-2">REST APIs</span>
-        <span class="badge bg-secondary p-2">PostgreSQL</span>
-        <span class="badge bg-secondary p-2">SQL</span>
-        <span class="badge bg-secondary p-2">HTML/CSS</span>
-        <span class="badge bg-secondary p-2">C++</span>
-        <span class="badge bg-secondary p-2">Firebase</span>
-        <span class="badge bg-secondary p-2">Git & GitHub</span>
-        <span class="badge bg-secondary p-2">OOP</span>
-        <span class="badge bg-secondary p-2">CLI Tools</span>
-        <span class="badge bg-secondary p-2">Networking</span>
-        <span class="badge bg-secondary p-2">Software Engineering</span>
-</div>
-
+    <div class="principles">
+      <div class="principle">
+        <span class="principle-num">01</span>
+        <span class="principle-text">Read the datasheet before writing a line of code</span>
+      </div>
+      <div class="principle">
+        <span class="principle-num">02</span>
+        <span class="principle-text">Understand the register before setting the bit</span>
+      </div>
+      <div class="principle">
+        <span class="principle-num">03</span>
+        <span class="principle-text">If it broke, document why</span>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="projects" class="container py-5" data-aos="fade-up">
-    <div class="p-4 bg-white rounded shadow-sm">
-      <h2 class="fw-semibold border-bottom pb-2 mb-4">Projects</h2>
-
-      <div class="project-card mb-4">
-        <h4 class="fw-bold">Eatscape – Food Truck Management App</h4>
-        <p>Developed a cross-platform mobile app in Flutter with real-time location tracking (Google Maps API), user authentication (Firebase Auth), and responsive UI. Admin dashboard allows food truck owners to manage menus and locations with tiered subscription visibility.</p>
-        <p><strong>Tech:</strong> Flutter, Dart, Firebase (Auth, Firestore, Storage), Google Maps API, Cloud Functions</p>
-        <div class="text-center my-4">
-          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#eatscapeScreenshots" aria-expanded="false" aria-controls="eatscapeScreenshots">
-            View App Screenshots
-          </button>
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container fade-in">
+    <div class="section-header">
+      <span class="section-label">02</span>
+      <h2>Technical Skills</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <div class="skill-group-label">Architecture</div>
+        <div class="skill-items">
+          <span class="tag">ARM Cortex-M0+</span>
+          <span class="tag">Memory-mapped I/O</span>
+          <span class="tag">Vector tables</span>
+          <span class="tag">NVIC</span>
         </div>
-        
-        <div class="collapse" id="eatscapeScreenshots">
-          <div id="eatscapeCarousel" class="carousel slide mb-4 d-flex justify-content-center" data-bs-ride="carousel" style="max-width: 350px; margin: auto;">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/Eatscape1.PNG" class="d-block w-100 rounded shadow-sm" alt="Eatscape Screenshot 1">
-              </div>
-              <div class="carousel-item">
-                <img src="images/Eatscape2.PNG" class="d-block w-100 rounded shadow-sm" alt="Eatscape Screenshot 2">
-              </div>
-              <div class="carousel-item">
-                <img src="images/Eatscape3.PNG" class="d-block w-100 rounded shadow-sm" alt="Eatscape Screenshot 3">
-              </div>
-              <div class="carousel-item">
-                <img src="images/Eatscape4.PNG" class="d-block w-100 rounded shadow-sm" alt="Eatscape Screenshot 4">
-              </div>
-              <div class="carousel-item">
-                <img src="images/Eatscape5.PNG" class="d-block w-100 rounded shadow-sm" alt="Eatscape Screenshot 5">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#eatscapeCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#eatscapeCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-label">Peripherals</div>
+        <div class="skill-items">
+          <span class="tag">GPIO</span>
+          <span class="tag">RCC</span>
+          <span class="tag">EXTI</span>
+          <span class="tag">SPI</span>
+          <span class="tag in-progress">I2C ···</span>
+          <span class="tag in-progress">USART ···</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-label">Toolchain</div>
+        <div class="skill-items">
+          <span class="tag">Baremetal C</span>
+          <span class="tag">STM32CubeIDE</span>
+          <span class="tag">GDB</span>
+          <span class="tag">Linker scripts</span>
+          <span class="tag">ARM Assembly</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-label">Hardware</div>
+        <div class="skill-items">
+          <span class="tag">Breadboard prototyping</span>
+          <span class="tag">MOSFET switching</span>
+          <span class="tag">Inductive load control</span>
+          <span class="tag">Datasheet navigation</span>
+        </div>
+      </div>
+    </div>
+    <p style="font-family: var(--mono); font-size: 0.68rem; color: var(--ink-faint); margin-top: 0.75rem;">··· = in progress</p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container fade-in">
+    <div class="section-header">
+      <span class="section-label">03</span>
+      <h2>Projects</h2>
+    </div>
+
+    <!-- STM32 Project -->
+    <div class="project-card">
+      <div class="project-meta">
+        <span class="project-type">Embedded / Firmware</span>
+        <span class="project-status active">Active</span>
+      </div>
+      <h3>STM32 Self-Watering Planter</h3>
+      <p class="project-desc">Baremetal pump driver on the STM32 Nucleo G0B1CE. Button-controlled MOSFET switching configured entirely through direct register access — MODER, OTYPER, PUPDR, BSRR — without HAL. Includes pull-down network, gate resistor, and inductive load handling.</p>
+      <div class="project-lessons">// Lesson learned: inductive loads require a flyback diode.<br>// Omitting one killed the board. Now it's in every schematic.</div>
+      <div class="project-stack">
+        <span class="tag">Baremetal C</span>
+        <span class="tag">ARM Cortex-M0+</span>
+        <span class="tag">STM32 G0B1CE</span>
+        <span class="tag">MOSFET drive</span>
+        <span class="tag">Register-level GPIO</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/AGBaltazar/STM32Nucleo_AirPurifier" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+
+    <!-- Eatscape -->
+    <div class="project-card">
+      <div class="project-meta">
+        <span class="project-type">Previous Work — Mobile / Full Stack</span>
+        <span class="project-status">Completed</span>
+      </div>
+      <h3>Eatscape — Food Truck Management App</h3>
+      <p class="project-desc">Cross-platform mobile app with real-time location tracking via Google Maps API, Firebase Auth, Firestore, and an admin dashboard for menu and location management. Tiered subscription visibility for food truck operators.</p>
+      <div class="project-stack">
+        <span class="tag">Flutter</span>
+        <span class="tag">Dart</span>
+        <span class="tag">Firebase</span>
+        <span class="tag">Google Maps API</span>
+        <span class="tag">Cloud Functions</span>
+      </div>
+      <div class="project-links">
+        <button class="collapse-toggle" onclick="toggleCollapse(this)">View Screenshots</button>
+      </div>
+      <div class="collapse-body">
+        <div class="carousel" id="carousel1">
+          <div class="carousel-track" id="track1">
+            <img src="images/Eatscape1.PNG" alt="Eatscape screenshot 1">
+            <img src="images/Eatscape2.PNG" alt="Eatscape screenshot 2">
+            <img src="images/Eatscape3.PNG" alt="Eatscape screenshot 3">
+            <img src="images/Eatscape4.PNG" alt="Eatscape screenshot 4">
+            <img src="images/Eatscape5.PNG" alt="Eatscape screenshot 5">
           </div>
         </div>
-        
-        
+        <div class="carousel-controls">
+          <button class="carousel-btn" onclick="moveCarousel('track1', -1)">← Prev</button>
+          <button class="carousel-btn" onclick="moveCarousel('track1', 1)">Next →</button>
+        </div>
       </div>
-
-    
-<div class="project-card mb-4">
-  <h4 class="fw-bold">Asteroid Shooter Game</h4>
-  <p>Built an arcade-style space shooter using Python and Pygame with core mechanics (movement, firing, scoring), collision detection, animations, and a HUD system. Demonstrated clean OOP principles and real-time game logic.</p>
-  <p><strong>Tech:</strong> Python, Pygame</p>
-
-  <div class="d-flex justify-content-center mb-2">
-    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#videoAsteroid" aria-expanded="false" aria-controls="videoAsteroid">
-      🎮 Show Demo Video
-    </button>
-  </div>
-  <div class="collapse" id="videoAsteroid">
-    <video controls width="100%">
-      <source src="media/AsteroidGameplay.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-</div>
-
-<div class="project-card mb-4">
-  <h4 class="fw-bold">Fake News Spotter – AI-Powered News Analyzer</h4>
-  <p>
-    Developed a full-stack web application that detects fake news and media bias using advanced NLP models. 
-    The system scrapes live news articles, analyzes their credibility and bias through AI-powered classifiers, 
-    and presents real-time insights in an intuitive web interface.
-  </p>
-  <ul>
-    <li>Backend powered by FastAPI AI inference and API management</li>
-    <li>Integrated Transformer-based models for fake news detection and bias classification</li>
-    <li>Frontend built with HTML, Bootstrap, and JavaScript for responsive and user-friendly interaction</li>
-    <li>Locally hosted and publicly routed utilizing Tunnelmole with HTTPS for security</li>
-  </ul>
-  <p><strong>Tech:</strong> Python, FastAPI, Transformers, NLP, Tunnelmole, HTML/CSS, Bootstrap</p>
-  <div class="text-center">
-    <a href="https://dlnmcx-ip-99-95-253-216.tunnelmole.net/" target="_blank" class="btn btn-primary">🔗 Live Demo</a>
-  </div>
-</div>
-
-
-
-<div class="project-card mb-4">
-  <h4 class="fw-bold">Pokedex CLI – Go Command Line App</h4>
-  <p>Developed a command-line application in Go that lets users look up Pokémon data using the PokéAPI. The project demonstrates REST API integration, JSON parsing, CLI tool design, and performance improvements using a local cache system.</p>
-  <ul>
-    <li>Sent and handled HTTP requests to the PokéAPI</li>
-    <li>Parsed complex JSON responses into Go structs</li>
-    <li>Built a user-friendly CLI with input commands and navigation</li>
-    <li>Implemented caching to reduce API calls and improve speed</li>
-  </ul>
-  <p><strong>Tech:</strong> Go (Golang), REST API, CLI Design, JSON, HTTP, Caching</p>
-</div>
-
-
-<div class="project-card mb-4">
-  <h4 class="fw-bold">Skill Regression Calculator – Go Web App</h4>
-  <p>Developed and deployed a backend-focused application that estimates how much a user's skill has decayed using a time-based algorithm. The app provides YouTube-based practice recommendations and updates the frontend dynamically.</p>
-  <ul>
-    <li>Built a RESTful API server using Go to calculate regression scores</li>
-    <li>Integrated the YouTube Data API for personalized video recommendations</li>
-    <li>Handled JSON requests/responses between the frontend and backend</li>
-    <li>Updated the DOM dynamically based on server responses</li>
-    <li>Containerized the application using Docker and deployed on Render</li>
-  </ul>
-  <p><strong>Tech:</strong> Go (Golang), REST API, Docker, JavaScript, YouTube API, HTML/CSS</p>
-  <div class="text-center">
-  <a href="https://skill-regression-calculator.onrender.com/" target="_blank" class="btn btn-primary">Live Demo</a>
-</div>  
-</div>
-
-
-</div>
-</div>
-  </section>
-
-  <section id="education" class="container py-5" data-aos="fade-up">
-  <div class="p-4 bg-white rounded shadow-sm">
-    <h2 class="fw-semibold border-bottom pb-2 mb-4">Education</h2>
-
-    <div class="mb-4">
-      <h5 class="fw-bold mb-1">Bachelor of Science in Computer Science</h5>
-      <p class="mb-1">University of Arkansas, Grantham — <em>Graduated Aug. 2024</em></p>
-      <p>
-        A DEAC-accredited program focused on practical software development, covering topics like programming (JavaScript, C++, C#), data structures, databases (SQL), operating systems, software engineering, cybersecurity, and mobile/web development.
-      </p>
-      <ul>
-        <li>Key topics: Data Structures, Networking, OOP, Web Development, Cybersecurity</li>
-        <li>Languages/Tools: JavaScript, C++, SQL, Git, .NET</li>
-        <li>Capstone: Full-stack team project simulating real-world development</li>
-      </ul>
     </div>
-
-   <div class="mt-4">
-  <h5 class="fw-bold mb-2">Continued Learning — Boot.dev</h5>
-  <p>
-    I'm committed to ongoing growth as a developer through structured learning on <strong>Boot.dev</strong>, where I’ve been deepening my expertise in backend development, systems programming, and computer science fundamentals. So far, I’ve completed courses in Go, Python, Object-Oriented Programming, Git, HTTP Clients, and Linux, gaining hands-on experience with real-world concepts like API integration, CLI tooling, version control, and shell-based environments. This continuous education helps me build clean, efficient software with a strong foundation in both theory and practice.
-  </p>
-  <p class="mb-2">
-    <a href="https://www.boot.dev/u/abaltazar" target="_blank" class="btn btn-outline-primary btn-sm">🔗 View My Boot.dev Profile</a>
-  </p>
-  <p >
-    <img src="https://api.boot.dev/v1/users/public/1a980e6e-c0f6-4ad2-b38f-cfc688ed6153/thumbnail" alt="Boot.dev Profile Badge" class="img-fluid rounded shadow-sm" style="max-width: 300px;">
-  </p>
-</div>
 
   </div>
 </section>
 
-<section id="resume" class="container py-5" data-aos="fade-up">
-  <div class="p-4 bg-white rounded shadow-sm text-center">
-    <h2 class="fw-semibold border-bottom pb-2 mb-4">Resume</h2>
-
-    <div class="d-flex justify-content-center gap-3 flex-wrap mb-3">
-      <a href="/media/Alejandro Garcia Resume.pdf" class="btn btn-outline-primary" download>
-        Download My Resume
-      </a>
-      <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#viewResume" aria-expanded="false" aria-controls="viewResume">
-        View Resume
-      </button>
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container fade-in">
+    <div class="section-header">
+      <span class="section-label">04</span>
+      <h2>Education</h2>
     </div>
 
-    <div class="collapse" id="viewResume">
-      <div class="ratio ratio-4x3 shadow-sm border rounded">
-        <iframe src="/media/Alejandro Garcia Resume.pdf" title="Resume PDF" allowfullscreen></iframe>
+    <div class="edu-item">
+      <div class="edu-school">University of Arkansas, Grantham</div>
+      <div class="edu-degree">B.S. Computer Science — Aug. 2024</div>
+      <p class="edu-desc">DEAC-accredited program covering data structures, networking, OOP, operating systems, databases, cybersecurity, and software engineering. Languages: JavaScript, C++, C#, SQL.</p>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-school">FastBit Embedded Brain Academy</div>
+      <div class="edu-degree">Mastering Microcontroller & Peripheral Driver Development (MCU1) — In Progress</div>
+      <p class="edu-desc">Peripheral driver development from scratch on STM32: GPIO, SPI, I2C, USART. Emphasis on register-level understanding and reading ARM reference manuals.</p>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-school">Boot.dev</div>
+      <div class="edu-degree">Backend & Systems — Ongoing</div>
+      <p class="edu-desc">Go, Python, OOP, Git, HTTP, Linux. Structured backend fundamentals to complement embedded systems work.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container fade-in">
+    <div class="section-header">
+      <span class="section-label">05</span>
+      <h2>Contact</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-row">
+        <span class="contact-label">Email</span>
+        <a href="mailto:agee.baltazar@icloud.com" class="contact-value">agee.baltazar@icloud.com</a>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">GitHub</span>
+        <a href="https://github.com/AGBaltazar" target="_blank" class="contact-value">github.com/AGBaltazar</a>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">LinkedIn</span>
+        <a href="https://www.linkedin.com/in/alejandrobaltazar" target="_blank" class="contact-value">linkedin.com/in/alejandrobaltazar</a>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Resume</span>
+        <a href="/media/Alejandro Garcia Resume.pdf" class="contact-value" download>Download PDF ↓</a>
       </div>
     </div>
   </div>
 </section>
 
+<footer>
+  <p class="footer-text">© 2026 Alejandro Garcia Baltazar</p>
+</footer>
 
-  <footer class="bg-primary text-white text-center p-4">
-    <p class="mb-0">&copy; 2025 Alejandro Garcia Baltazar.</p>
-  </footer>
+<script>
+  // Fade-in on scroll
+  const faders = document.querySelectorAll('.fade-in');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.1 });
+  faders.forEach(f => observer.observe(f));
 
-  <script>
-    AOS.init();
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  // Collapse toggle
+  function toggleCollapse(btn) {
+    const body = btn.closest('.project-links').nextElementSibling;
+    body.classList.toggle('open');
+    btn.textContent = body.classList.contains('open') ? 'Hide Screenshots' : 'View Screenshots';
+  }
+
+  // Simple carousel
+  const positions = {};
+  function moveCarousel(trackId, dir) {
+    const track = document.getElementById(trackId);
+    const total = track.children.length;
+    positions[trackId] = ((positions[trackId] || 0) + dir + total) % total;
+    track.style.transform = `translateX(-${positions[trackId] * 320}px)`;
+  }
+</script>
+
 </body>
 </html>
