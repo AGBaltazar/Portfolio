@@ -26,11 +26,12 @@
   <div class="container">
     <div class="hero-label">Firmware & Embedded Engineer</div>
     <h1>Alejandro<br>Garcia Baltazar</h1>
-    <p class="hero-sub">CS graduate building from the silicon up. Direct register manipulation, peripheral driver development, and real hardware — no abstractions.</p>
+    <p class="hero-sub">CS graduate shifting into Embedded systems</p>
     <div class="hero-actions">
       <a href="/media/Alejandro Garcia Resume.pdf" class="btn-primary" download>↓ Download Resume</a>
       <a href="https://github.com/AGBaltazar" target="_blank" class="btn-ghost">GitHub →</a>
       <a href="https://www.linkedin.com/in/alejandrobaltazar" target="_blank" class="btn-ghost">LinkedIn →</a>
+      <a href="https://medium.com/@agee.baltazar target="blank" class="btn-ghost">Medium →</a>
     </div>
   </div>
 </section>
@@ -43,7 +44,7 @@
       <h2>About</h2>
     </div>
     <p class="about-text">Firmware and embedded systems engineer in training with a Bachelor's in Computer Science. I work directly at the register level — configuring RCC, GPIO, and peripherals from the reference manual without HAL abstractions. My goal is to build reliable, efficient firmware on constrained hardware.</p>
-    <p class="about-text">I come from a software background and chose to pivot into embedded because I wanted to understand the full stack — not just what software does, but what the hardware underneath it is actually doing.</p>
+    <p class="about-text">I come from a software background and chose to pivot into embedded because I wanted to understand how hardware functions under the physical buttons.</p>
 
     <div class="principles">
       <div class="principle">
@@ -56,7 +57,7 @@
       </div>
       <div class="principle">
         <span class="principle-num">03</span>
-        <span class="principle-text">If it broke, document why</span>
+        <span class="principle-text">If it breaks, document why</span>
       </div>
     </div>
   </div>
@@ -75,8 +76,6 @@
         <div class="skill-items">
           <span class="tag">ARM Cortex-M0+</span>
           <span class="tag">Memory-mapped I/O</span>
-          <span class="tag">Vector tables</span>
-          <span class="tag">NVIC</span>
         </div>
       </div>
       <div class="skill-group">
@@ -95,7 +94,7 @@
         <div class="skill-items">
           <span class="tag">Baremetal C</span>
           <span class="tag">STM32CubeIDE</span>
-          <span class="tag">ARM Assembly</span>
+          <span class="tag">VSCode + PlatformIO</span>
         </div>
       </div>
       <div class="skill-group">
@@ -105,6 +104,7 @@
           <span class="tag">MOSFET switching</span>
           <span class="tag">Inductive load control</span>
           <span class="tag">Datasheet navigation</span>
+          <span class="tag">Soldering</span>
         </div>
       </div>
     </div>
@@ -121,10 +121,27 @@
     </div>
 
     <!-- STM32 Project -->
-    <div class="project-card">
+<div class="project-card">
       <div class="project-meta">
         <span class="project-type">Embedded / Firmware</span>
         <span class="project-status active">Active</span>
+      </div>
+      <h3>ESP32 Self-Watering Planter</h3>
+      <p class="project-desc">This is a fork of the original STM32 Planter, but with proper equipment. The goal here is to create a closed system that just required 12V power which will equipt the MCU with various sensors to automatically water a plant with dried dirt.</p>
+      <div class="project-stack">
+        <span class="tag">ESP32</span>
+        <span class="tag">ESP32-GPIO</span>
+        <span class="tag">ESP32-Wifi</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/AGBaltazar/ESP32-SelfWatering-Planter" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-meta">
+        <span class="project-type">Embedded / Firmware</span>
+        <span class="project-status">Completed</span>
       </div>
       <h3>STM32 Self-Watering Planter</h3>
       <p class="project-desc">Baremetal pump driver on the STM32 Nucleo G0B1CE. Button-controlled MOSFET switching configured entirely through direct register access — MODER, OTYPER, PUPDR, BSRR — without HAL. Includes pull-down network, gate resistor, and inductive load handling.</p>
@@ -203,7 +220,7 @@
       <div class="collapse-body">
         <div class="carousel" id="carousel1">
           <div class="carousel-track" id="track1">
-            <img src="images/Udemy Cert.jpg" alt="Eatscape screenshot 1">
+            <img src="images/Udemy Cert.jpg" alt="Udemy Certificate Screenshot 1">
           </div>
         </div>
       </div>
