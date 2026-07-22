@@ -16,7 +16,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#writings">Writings</a></li>
+    <li><a href="#writing">Writings</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -44,23 +44,8 @@
       <span class="section-label">01</span>
       <h2>About</h2>
     </div>
-    <p class="about-text">Firmware and embedded systems engineer in training with a Bachelor's in Computer Science. I work directly at the register level — configuring RCC, GPIO, and peripherals from the reference manual without HAL abstractions. My goal is to build reliable, efficient firmware on constrained hardware.</p>
+    <p class="about-text">Firmware and embedded systems engineer in training with a Bachelor's in Computer Science. I work directly at the register level — configuring RCC, GPIO, and peripherals from the reference manual. My goal is to build reliable, efficient firmware for hardware.</p>
     <p class="about-text">I come from a software background and chose to pivot into embedded because I wanted to understand how hardware functions under the physical buttons.</p>
-
-    <div class="principles">
-      <div class="principle">
-        <span class="principle-num">01</span>
-        <span class="principle-text">Read the datasheet before writing a line of code</span>
-      </div>
-      <div class="principle">
-        <span class="principle-num">02</span>
-        <span class="principle-text">Understand the register before setting the bit</span>
-      </div>
-      <div class="principle">
-        <span class="principle-num">03</span>
-        <span class="principle-text">If it breaks, document why</span>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -77,6 +62,7 @@
         <div class="skill-items">
           <span class="tag">ARM Cortex-M0+</span>
           <span class="tag">Memory-mapped I/O</span>
+          <span class="tag"> ESP32</span>
         </div>
       </div>
       <div class="skill-group">
@@ -86,7 +72,8 @@
           <span class="tag">RCC</span>
           <span class="tag">EXTI</span>
           <span class="tag">SPI</span>
-          <span class="tag in-progress">I2C ···</span>
+          <span class="tag">I2C</span>
+          <span class="tag">ADC</span>
           <span class="tag in-progress">USART ···</span>
         </div>
       </div>
@@ -94,6 +81,7 @@
         <div class="skill-group-label">Toolchain</div>
         <div class="skill-items">
           <span class="tag">Baremetal C</span>
+          <span class="tag">ESP-IDF</span>
           <span class="tag">STM32CubeIDE</span>
           <span class="tag">VSCode + PlatformIO</span>
         </div>
@@ -128,11 +116,16 @@
         <span class="project-status active">Active</span>
       </div>
       <h3>ESP32 Self-Watering Planter</h3>
-      <p class="project-desc">This is a fork of the original STM32 Planter, but with proper equipment. The goal here is to create a WiFi-enabled self-watering planter built on an ESP32 which controls a 12V submersible pump via MOSFET switching. The controls are accessible by a web server hosted by the ESP32 itself.</p>
+      <p class="project-desc">An autonomous planter equipped with a submersible pump, ambient light sensor, and soil moisture sensor for sensor-based watering decisions. Controls a 12V pump via MOSFET switching with an optional WiFi web server for browser-based control</p>
       <div class="project-stack">
-        <span class="tag">ESP32</span>
-        <span class="tag">ESP32-GPIO</span>
-        <span class="tag">ESP32-Wifi</span>
+        <span class="tag">C</span>
+        <span class="tag">ESP-IDF</span>
+        <span class="tag">FreeRTOS</span>
+        <span class="tag">I2C</span>
+        <span class="tag">ADC</span>
+        <span class="tag">WiFi</span>
+        <span class="tag">MOSFET drive</span>
+        <span class="tag">PlatformIO</span>
       </div>
       <div class="project-links">
         <a href="https://github.com/AGBaltazar/ESP32-SelfWatering-Planter" target="_blank">View on GitHub</a>
@@ -224,6 +217,18 @@
       </div>
       <h3>How to Connect Simple Digital Modules to an ESP32</h3>
       <p class="project-desc">A beginner-focused guide covering how to wire and control 3-pin digital modules using ESP-IDF on the ESP32. Covers GPIO initialization, signal pin configuration, and a working button-controlled main loop.</p>
+      <div class="project-links">
+        <a href="https://medium.com/@agee.baltazar" target="_blank">Read on Medium</a>
+      </div>
+    </div>
+
+     <div class="project-card">
+      <div class="project-meta">
+        <span class="project-type">Medium — Embedded Systems</span>
+        <span class="project-status active">Active</span>
+      </div>
+      <h3>I2C Basics with an ESP32, From a Beginner</h3>
+      <p class="project-desc">A practical introduction to I2C on the ESP32 using the VEML7700 ambient light sensor. Covers bus and device handle configuration, writing to config registers, reading multi-byte data, and parsing 16-bit values from raw bytes.</p>
       <div class="project-links">
         <a href="https://medium.com/@agee.baltazar" target="_blank">Read on Medium</a>
       </div>
