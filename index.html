@@ -111,10 +111,31 @@
     </div>
 
     <!-- STM32 Project -->
+     <div class="project-card">
+      <div class="project-meta">
+        <span class="project-type">Embedded / Firmware</span>
+        <span class="project-status active">In Progress</span>
+      </div>
+      <h3>ESP32 Bird Feeder</h3>
+      <p class="project-desc">An ESP32 project equipted with a OV5640 and a custom 3D printed bird feeder for live browser view.</p>
+      <div class="project-stack">
+        <span class="tag">C</span>
+        <span class="tag">ESP-IDF</span>
+        <span class="tag">FreeRTOS</span>
+        <span class="tag">I2C</span>
+        <span class="tag">WiFi</span>
+        <span class="tag">MOSFET drive</span>
+        <span class="tag">PlatformIO</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/AGBaltazar/ESP32_BirdFeeder" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+
 <div class="project-card">
       <div class="project-meta">
         <span class="project-type">Embedded / Firmware</span>
-        <span class="project-status active">Active</span>
+        <span class="project-status">Completed</span>
       </div>
       <h3>ESP32 Self-Watering Planter</h3>
       <p class="project-desc">An autonomous planter equipped with a submersible pump, ambient light sensor, and soil moisture sensor for sensor-based watering decisions. Controls a 12V pump via MOSFET switching with an optional WiFi web server for browser-based control</p>
@@ -130,6 +151,22 @@
       </div>
       <div class="project-links">
         <a href="https://github.com/AGBaltazar/ESP32-SelfWatering-Planter" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-links">
+      <button class="collapse-toggle" onclick="toggleCollapse(this)">View Screenshots</button>
+      </div>
+      <div class="collapse-body">
+        <div class="carousel" id="carousel3">
+          <div class="carousel-track" id="track3">
+            <img src="images/IMG_9046.jpeg" alt="Screenshot 1">
+            <img src="images/IMG_9053.jpeg" alt="Screenshot 2">
+            <img src="images/IMG_9054.jpeg" alt="Screenshot 3">
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn" onclick="moveCarousel('track3', -1)">← Prev</button>
+          <button class="carousel-btn" onclick="moveCarousel('track3', 1)">Next →</button>
+        </div>
       </div>
     </div>
 
@@ -260,8 +297,8 @@
         <button class="collapse-toggle" onclick="toggleCollapse(this)">View Certificate</button>
       </div>
       <div class="collapse-body">
-        <div class="carousel" id="carousel1">
-          <div class="carousel-track" id="track1">
+        <div class="carousel" id="carousel2">
+          <div class="carousel-track" id="track2">
             <img src="images/Udemy Cert.jpg" alt="Udemy Certificate Screenshot 1">
           </div>
         </div>
